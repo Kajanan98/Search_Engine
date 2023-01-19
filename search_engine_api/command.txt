@@ -1,0 +1,3 @@
+curl -X PUT "localhost:9200/tamil_songs_index?pretty" -H "Content-Type: application/json" -d @mapping_file.json
+
+curl -X POST "localhost:9200/tamil_songs_index/_bulk?pretty" -H "Content-Type: application/json" --data-binary @180295F_Mini_Project_Corpus.json
